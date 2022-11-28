@@ -31,6 +31,7 @@ In this proposal, **all IO would be moved to dedicated addon packages**. The add
 - Neutral, because it will require a user to install more packages in most cases (e.g. `pip install pymatgen pymatgen-io-vasp`)
 - Bad, because it will require a lot of work to implement
 - Bad, because it could cause some IO addon packages to fall out of date and stop working as pymatgen updates.
+- Bad, because it could result in less stringent code quality control for IO codes
 
 ### Option 1a - same as above, but keep VASP IO in pymatgen because VASP is so central to MP and to provide a concrete example of how pymatgen IO is supposed to work
 
@@ -40,6 +41,7 @@ This option would place updated IO of ANY code into a dedicated addon package (e
 
 - Good, because it preserves backwards compatibility of `pymatgen` IO with `atomate1`
 - Bad, because it might cause duplication of effort or confusion among users (e.g., use the old VASP IO or the new VASP IO)?
+- Bad, because it could result in less stringent code quality control for IO codes
 
 ### Option 3: Keep updating IO for existing codes in `pymatgen`, let future codes use addon packages
 
