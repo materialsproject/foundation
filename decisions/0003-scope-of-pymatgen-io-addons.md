@@ -1,0 +1,59 @@
+# Scope of emmet document models
+
+## Context and Problem Statement
+
+Beginning in 2022, [pymatgen addon packages](https://pymatgen.org/addons) became available, allowing `io`, `analysis`, and `ext` code to be maintained and installed separately from pymatgen itself.
+
+Recent development activity around improvement to existing IO and development of new IO has raised questions about the intended scope of `pymatgen-io-xxx` packages. Is the long-term goal for ALL IO to live in addon packages, or only newly-developed codes?
+
+Specific recent cases that are relevant include
+- [New LAMMPS IO work by @gbrunin](https://github.com/materialsproject/pymatgen/issues/2754)
+- Updated VASP `InputSet` / `InputGenerator` in `atomate2`
+- [WIP updates to Q-Chem IO by @rdguha1995](https://github.com/materialsproject/atomate2/pulls) for compatibility with `atomate2`
+
+
+## Decision Drivers
+
+- Developers of IO code must have highly specialized knowledge of that particular code. There are typically only a few who know the external package well enough to write and review robust IO
+- pymatgen dependency bloat makes installation cumbersome, especially in space-constrained environments
+- `atomate2` `Maker` classes expect IO classes to conform to the new Abstract IO interface in `pymatgen` (i.e, `InputSet` / `InputGenerator` paradigm). Hence, many legayc IO modules will need to be updated to work well with `atomate2`.
+- `atomate2` is creating renwed interest among external users in developing new workflows, which are likely to involve IO for new codes. This increases the importance of clarifying the intended scope of pymatgen addon packages.
+
+## Considered Options
+
+### Option 1: Migrate all IO codes to dedicated addon packages
+
+In this proposal, **all IO would be moved to dedicated addon packages**. The addon packages would presumably be maintained by the most active / invested developers that are experts in the respective codes. For example, @shyuep and/or @utf for VASP, @samblau for Q-Chem, etc.
+
+- Good, because it will empower the most expert and invested developers to directly maintain their IO modules, without the need for a pymatgen maintainer as a "middle man"
+- Good, because it reduces dependency bloat. A typical user will probably only need IO for 2-3 codes. This way they can only install what they need which is beneficial on, e.g., HPC systems with limited disk quotas
+- Good, because it will reduce the number of unnecessary CI tests that are required on every PR. For example, a PR in the Q-Chem addon part of pymatgen really doesn't need to trigger unit tests of Lobster. Reducing CI tests will have positive impacts in terms of energy and climate emissions over the long-term
+- Neutral, because it will require a user to install more packages in most cases (e.g. `pip install pymatgen pymatgen-io-vasp`)
+- Bad, because it will require a lot of work to implement
+- Bad, because it could cause some IO addon packages to fall out of date and stop working as pymatgen updates.
+
+### Option 1a - same as above, but keep VASP IO in pymatgen because VASP is so central to MP and to provide a concrete example of how pymatgen IO is supposed to work
+
+### Option 2: Use addon packages for all new codes AND for `atomate2` compatibility upgrades of existing IO
+
+This option would place updated IO of ANY code into a dedicated addon package (e.g. `pymatgen-io-vasp`). Users that want to use `atomate2` would install the associated addon packages, which would supercede whatever IO is in `pymatgen`. Existing `atomate1` compatible IO in `pymatgen` could remain as-is.
+
+- Good, because it preserves backwards compatibility of `pymatgen` IO with `atomate1`
+- Bad, because it might cause duplication of effort or confusion among users (e.g., use the old VASP IO or the new VASP IO)?
+
+### Option 3: Keep updating IO for existing codes in `pymatgen`, let future codes use addon packages
+
+- Good, because it simplifies installation (`pip install pymatgen`)
+- Bad, because it may confuse users that some codes are "built in" while others require a separate addon installation
+- Bad, because it requires pymatgen maintainers to have knowledge of many codes
+- Bad, because it may be difficult to maintain simultaneous `atomate1` and `atomate2` compatibility in IO classes (needs further research)
+
+## Decision Outcome
+
+TBD
+
+## More Information
+
+https://pymatgen.org/addons
+
+[pymatgen #2754](https://github.com/materialsproject/pymatgen/issues/2754)
