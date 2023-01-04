@@ -1,0 +1,6 @@
+pymatgen
+atomate2
+maggma
+emmet
+crystal-toolkit
+jobflow
