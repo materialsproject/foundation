@@ -13,7 +13,7 @@ for doing so most effectively and communicating our activities to outside partie
 
 > We seek to be **community-driven** by considering the needs of a broad cross-section of our users when making development decisions.
 
-> We seek to be **inclusive** by taking intentional steps to make our meetings, discussions, and tools accessible, welcoming and respectful to contributors regardless of background.
+> We seek to be **inclusive** by taking intentional steps to make our meetings, discussions, and tools accessible, welcoming and respectful to contributors regardless level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality.
 
 > We seek to be **coordinated** by promoting consistency and mutual compatibility among our codes, documentation, and training materials.
 
