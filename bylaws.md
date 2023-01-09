@@ -6,6 +6,8 @@ Effective January 2023
 
 This document is provided as a preliminary charter defining how the Materials Project Software Foundation ("the Foundation" or "MPSF") will operate. It should be viewed as a living document whose provisions will evolve over time.
 
+These Bylaws may be modified and updated from time to time according to the same process used for Decision Records, detailed below.
+
 ## Purpose
 
 The mission of the Materials Project Software Foundation is described in its [Mission Statement](decisions/0001-mission-statement.md). It is a coordinated effort by Materials Project staff and volunteer developers and does not constitute a nonprofit foundation in the legal sense.
