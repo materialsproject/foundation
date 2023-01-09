@@ -23,4 +23,4 @@ for doing so most effectively and communicating our activities to outside partie
 
 ## Decision Outcome
 
-TBD
+Proposal #1 was adopted by unanimous consent on January 9, 2023
