@@ -78,7 +78,7 @@ it makes sense to port any of these into `emmet`.
 
 ## Decision Outcome
 
-The decision was taken to proceed with option 2. `emmet` will be used to house
+The decision was taken to proceed with option 1. `emmet` will be used to house
 documents that are used in the Materials Project website and core workflows.
 Documents that provide `from_files` functions will ensure that all imports are
 performed inside the function itself to prevent dependency bloat.
