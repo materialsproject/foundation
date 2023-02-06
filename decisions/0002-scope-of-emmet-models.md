@@ -78,7 +78,19 @@ it makes sense to port any of these into `emmet`.
 
 ## Decision Outcome
 
-TBD
+The decision was taken to proceed with option 2. `emmet` will be used to house
+documents that are used in the Materials Project website and core workflows.
+Documents that provide `from_files` functions will ensure that all imports are
+performed inside the function itself to prevent dependency bloat.
+
+To ensure maximum compatibility with the existing set of parsed calculation
+data, all field names that have been changed in `atomate2` will be updated to
+match the field names in `emmet`. New fields such as `UUID` will be kept.
+
+It is expected that some task documents may start out in `atomate2` but 
+ultimately become part of the Materials Project infrastructure. When this
+happens the documents will be moved to `emmet`. These decisions will be made on
+a case-by-case basis.
 
 ## More Information
 
