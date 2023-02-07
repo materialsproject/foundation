@@ -19,19 +19,21 @@ One example for this are the LAMMPS workflows where multiple teams were interest
 * We would need to encourage developers to communicate with us
 
 ## Considered Options
-* issues in software packages
+**issues in software packages**
  * Good because it is at least somehow documented
  * Bad because developments might be in multiple packages and hard to discover
 
-* public MP org github project board
+**Public MP org github project board**
  * Good because developers can see quickly and with once glance what developments are on-going
  * Good because you can link developments in multiple software packages
  * Bad because you need to know github project boards
  * Bad because maybe hard to discover
  * Not clear so far if external members can use this
-* Forum entries
+ 
+**Forum entries**
  * Good because it is easy to use
  * Bad because the forum might be hard to navigate 
+
 
 
 ## Decision Outcome
@@ -41,6 +43,8 @@ Chosen option: "{title of option 1}", because
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
+
+
 
 * Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
 * Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
