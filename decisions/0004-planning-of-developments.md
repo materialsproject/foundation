@@ -28,7 +28,7 @@ One example for this are the LAMMPS workflows where multiple teams were interest
  * Good because you can link developments in multiple software packages
  * Bad because you need to know github project boards
  * Bad because maybe hard to discover
- * Not clear so far if external members can use this
+ * Not clear so far if external users not members of MP can use this
  
 **Forum entries**
  * Good because it is easy to use
