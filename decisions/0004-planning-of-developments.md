@@ -16,24 +16,23 @@ One example for this are the LAMMPS workflows where multiple teams were interest
 * It would avoid duplication of work
 * It could strengthen the Materials Project software infrastructure and also attract new external developers and contributors
 * Developers would need to disclose a part of their project early on
+* We would need to encourage developers to communicate with us
 
 ## Considered Options
 * issues in software packages
-- Good because it is at least somehow documented
-- Bad because developments might be in multiple packages and hard to discover
+ * Good because it is at least somehow documented
+ * Bad because developments might be in multiple packages and hard to discover
 
 * public MP org github project board
-- Good because developers can see quickly and with once glance what developments are on-going
-- Good because you can link developments in multiple software packages
-- Bad because you need to know github project boards
-- Bad because maybe hard to discover
-- Not clear so far if external members can use this
+ * Good because developers can see quickly and with once glance what developments are on-going
+ * Good because you can link developments in multiple software packages
+ * Bad because you need to know github project boards
+ * Bad because maybe hard to discover
+ * Not clear so far if external members can use this
 * Forum entries
-- Good because it is easy to use
-- Bad because the forum might be hard to navigate 
+ * Good because it is easy to use
+ * Bad because the forum might be hard to navigate 
 
-* True for all the options
-- We would need to encourage developers to communicate with us
 
 ## Decision Outcome
 
