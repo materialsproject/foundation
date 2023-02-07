@@ -19,7 +19,7 @@ One example for this are the LAMMPS workflows where multiple teams were interest
 * We would need to encourage developers to communicate with us
 
 ## Considered Options
-**issues in software packages**
+**Issues in individual software packages**
  * Good because it is at least somehow documented
  * Bad because developments might be in multiple packages and hard to discover
 
