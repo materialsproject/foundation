@@ -10,6 +10,7 @@ Specific recent cases that are relevant include
 - [New LAMMPS IO work by @gbrunin](https://github.com/materialsproject/pymatgen/issues/2754)
 - Updated VASP `InputSet` / `InputGenerator` in `atomate2`
 - [WIP updates to Q-Chem IO by @rdguha1995](https://github.com/materialsproject/atomate2/pulls) for compatibility with `atomate2`
+- A [related question](https://github.com/materialsproject/atomate2/issues/223) from external contributors concerning addon packages for `atomate2`
 
 
 ## Decision Drivers
@@ -57,5 +58,7 @@ TBD
 ## More Information
 
 https://pymatgen.org/addons
+
+[atomate2 #223](https://github.com/materialsproject/atomate2/issues/223)
 
 [pymatgen #2754](https://github.com/materialsproject/pymatgen/issues/2754)
