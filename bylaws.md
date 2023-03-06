@@ -48,7 +48,7 @@ The Materials Project Software Foundation comprises a Steering Committee and var
 
 ### GitHub Repository and Decision Records
 
-1. The MPSF maintains a public GitHub repository at https://github.com/materialsproject/foundation/ that contains written records of its decisions and recommendations.
+1. The MPSF maintains a public GitHub repository at <https://github.com/materialsproject/foundation/> that contains written records of its decisions and recommendations.
 2. Decisions will be documented using the `MADR` or "Markdown Any Decision Record" format which captures 1) the Context and Problem Statement, 2) the options considered, and 3) the chosen outcome.
 3. Decision records will be numbered sequentially according to their Pull Request number (see next section) for easy reference.
 
@@ -60,15 +60,14 @@ The Materials Project Software Foundation comprises a Steering Committee and var
 4. Discussion Items should be communicated to the MPSF Steering Committee approximately 1 week before a meeting.
 5. Prior to the meeting, MPSF members are encouraged to review the proposed PRs and use GitHub's discussion features and/or the MPSF Slack workspace to offer feedback and introduce additional alternatives.
 
-
 ### Making Decisions
 
 1. During the meeting, the Chairperson will lead a discussion of each PR while the Notetaker captures significant points of agreement or disagreement and options considered.
 2. The MPSF will make decisions guided by the principle of "Rough Consensus" as described by the [Internet Engineering Task Force](https://www.rfc-editor.org/rfc/rfc7282#page-7). Rough Consensus makes a distinction between members seeing a "fundamental flaw" with a proposed decision vs. thinking an alternative is "not the best choice", as described [here](https://async.twist.com/decision-making-flat-organization/). E.g., “I don’t believe Solution A is the best choice, because XYZ. I believe Solution B would be better, but I accept that Solution A can work too.” vs. “I believe Solution A is unacceptable because XYZ.”
-3. The Chairperson will lead the discussion, trying to ensure that all alternatives and concerns are heard and debated within the group. When the Chairperson believes this has happened, they can call for a vote to adopt an alternative. 
+3. The Chairperson will lead the discussion, trying to ensure that all alternatives and concerns are heard and debated within the group. When the Chairperson believes this has happened, they can call for a vote to adopt an alternative.
 4. If a member feels their concern has not been adequately heard, they may object to the vote. In this case, the member must explicitly re-state their concern and the Chairperson will extend the discussion to address that specific point. Members may only object to a vote one time per concern. In other words, if the same member wishes to object to a vote a second time, they must state a substantively different concern.
 5. Each Steering Committee member gets a single vote, irrespective of how the code(s) they are most closely associated with. Members who are not present at the meeting may register their votes asynchronously via the Slack workspace prior to the subsequent meeting.
 6. When a vote is taken and a majority has voted in favor, the PR will be updated before the next MPSF meeting by its author and/or the Repository Keeper to capture the decision outcome and major discussion points (including minority viewpoints / major objections as appropriate). At the beginning of the next meeting, the Chairperson will make a final call for new objections, and then the PR will be merged, signifying its adoption as an MPSF recommendation. Only objections that are new and substantially different from those discussed in the previous meeting(s) would be grounds for preventing adoption.
 7. When a vote is taken and a majority does not vote in favor, the PR will be left open and revisited at the next meeting.
 8. If a PR has been discussed a 2nd time (i.e. at multiple meetings) and not yet approved, this should be recorded in the GitHub discussion and the PR will be closed.
-9. Decision Records are not set in stone. They may be superceded or deprecated by future decisions at the discretion of the Steering Committee
+9. Decision Records are not set in stone. They may be superseded or deprecated by future decisions at the discretion of the Steering Committee
