@@ -24,7 +24,7 @@ One example for this are the LAMMPS workflows where multiple teams were interest
  * Bad because developments might be in multiple packages and hard to discover
  * Bad as it might distract from bugs or other relevant issues and add noise to the repo
 
-**Discussoins in individual software packages**
+**Discussions in individual software packages**
  * Good because it is documented
  * Good because it be easier to maintain
  * Bad because maintainers might overlook these discussions
