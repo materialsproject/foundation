@@ -28,18 +28,24 @@ One example for this are the LAMMPS workflows where multiple teams were interest
  * Good because it is documented
  * Good because it be easier to maintain
  * Bad because maintainers might overlook these discussions
+ * Bad because maybe hard to discover
 
 **Public MP org github project board**
  * Good because developers can see quickly and with once glance what developments are on-going
  * Good because you can link developments in multiple software packages
  * Bad because you need to know github project boards
  * Bad because maybe hard to discover
- * Not clear so far if external users not members of MP can use this
+ * External users that are not members of MP cannot use it
  
 **Forum entries**
  * Good because it is easy to use
  * Bad because the forum might be hard to navigate 
 
+
+**Multi-step solution including Website, Readme.txt and Discussions:**
+ 1.  Update to MP Website and Open Source Software Section with link to New Developer Guide
+ 2.  Update to Readme.txt of individal repos with link to New Developer Guide
+ 3.  New Developer Guide including link to Discussions of MP Foundation repo where developers could discuss/announce new additions 
 
 
 ## Decision Outcome
