@@ -44,8 +44,9 @@ One example for this are the LAMMPS workflows where multiple teams were interest
 
 **Multi-step solution including Website, Readme.txt and Discussions:**
  1.  Update to MP Website and Open Source Software Section with link to New Developer Guide
- 2.  Update to Readme.txt of individal repos with link to New Developer Guide
- 3.  New Developer Guide including link to Discussions of MP Foundation repo where developers could discuss/announce new additions 
+ 2.  New Developer Guide will be on MP Docs
+ 3.  Update to Readme.txt of individal repos with link to New Developer Guide
+ 4.  New Developer Guide including link to Discussions of MP Foundation repo where developers could discuss/announce new additions 
 
 
 ## Decision Outcome
