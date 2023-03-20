@@ -19,31 +19,31 @@ One example for this are the LAMMPS workflows where multiple teams were interest
 * We would need to encourage developers to communicate with us
 
 ## Considered Options
-**Issues in individual software packages**
+**Issues in Individual Software Packages**
  * Good because it is at least somehow documented
  * Bad because developments might be in multiple packages and hard to discover
  * Bad as it might distract from bugs or other relevant issues and add noise to the repo
 
-**Usage of Github Discussions in individual software packages**
+**Usage of Github Discussions in Individual Software Packages**
  * Good because it is documented
  * Good because it be easier to maintain
  * Bad because maintainers might overlook these discussions
  * Bad because maybe hard to discover
 
-**Public MP org github project board**
+**Public MP Org Github Project Board**
  * Good because developers can see quickly and with once glance what developments are on-going
  * Good because you can link developments in multiple software packages
  * Bad because you need to know github project boards
  * Bad because maybe hard to discover
  * External users that are not members of MP cannot use it
  
-**Forum entries**
+**Forum Entries**
  * Good because it is easy to use
  * Bad because the forum might be hard to navigate
  * Bad because developer-oriented discussions might get lost among all the user support questions
 
 
-**Multi-step solution including Website, Readme.txt and Discussions:**
+**Multi-Step Solution Including Website, Readme.txt and Discussions:**
  * Create a New Developer Guide on the MP Docs page that describes, at a high level, how codes work together, what is expected of new PRs, and who to contact.
  * Update to MP Website and Open Source Software Section with link to New Developer Guide
  * Update to Readme.txt of individal repos with link to New Developer Guide
