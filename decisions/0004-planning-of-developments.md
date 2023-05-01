@@ -52,13 +52,13 @@ The following points are the summary of our discussion:
 * Bad because the forum might be hard to navigate
 * Bad because developer-oriented discussions might get lost among all the user support questions
 
-### Multi-Step Solution Including Website, Readme.txt and Discussions (version of the 6th of March 2023)
+### Multi-Step Solution Including Website, Readme.md and Discussions (version of the 6th of March 2023)
 
 The multi-step solution includes the following points:
 
 * Create a New Developer Guide on the MP Docs page that describes, at a high level, how codes work together, what is expected of new PRs, and who to contact.
-* Update to MP Website and Open Source Software Section with link to New Developer Guide
-* Update to Readme.txt of individal repos with link to New Developer Guide
+* Update MP Website and Open Source Software Section with link to New Developer Guide
+* Update Readme.md of individal repos with link to New Developer Guide
 * Create a GitHub discussions board in MP Foundation repo where developers could discuss/announce new additions. Link to this from the New Devleoper Guide
 The following points are the summary of our discussion:
 * Good as it would help developers to get started
@@ -66,13 +66,13 @@ The following points are the summary of our discussion:
 * Good developers would only have one place to look
 * Bad because MP Foundation repo might not attract many users
 
-### Multi-Step Solution Including Website, Readme.txt and Discussions (version of the 1st of May 2023)
+### Multi-Step Solution Including Website, Readme.md and Discussions (version of the 1st of May 2023)
 
 The multi-step solution includes the following points:
 
 * Create a New Developer Guide on the MP Docs page that describes, at a high level, how codes work together, what is expected of new PRs, and who to contact.
-* Update to MP Website and Open Source Software Section with link to New Developer Guide
-* Update to Readme.txt of individal repos with link to New Developer Guide
+* Update MP Website and Open Source Software Section with link to New Developer Guide
+* Update Readme.md of individal repos with link to New Developer Guide
 * Optional:  Create a GitHub discussions board in MP Foundation repo where developers could discuss/announce new additions. Link to this from the New Devleoper Guide
 * Optional: Have a "Dev Project" discussion board in every single MP repo with a pinned comment at the top linking the "MP Dev Guide"
 
