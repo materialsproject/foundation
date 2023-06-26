@@ -1,4 +1,4 @@
-# Scope of emmet document models
+# Clarify Scope of pymatgen addons
 
 ## Context and Problem Statement
 
