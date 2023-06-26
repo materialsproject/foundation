@@ -22,3 +22,4 @@ The aim of this decision is to decide where and how MP-adjacent software will be
 - An "awesome list"-style GitHub repo under the Materials Project github account
 - On the Pymatgen page
 - In the development guide in the gitbook
+- Use the [`duecredit`](https://github.com/duecredit/duecredit/) system
