@@ -32,7 +32,7 @@ We could propose a guideline document that includes the following main points:
    new scientific formalism). The former might be more appropriate for a brief paper in a journal such as JOSS.
 4. To acknowledge that the initial set of authors will inevitably be incomplete over the lifetime of the code,
    two strategies are suggested:
-   a. A Zenodo citation that is continuously updated with all contributors.
+   a. A Zenodo citation that is continuously updated with all contributors and includes release notes specifying individual contributions.
    b. "Update" papers, on a frequency that is best determined by the circumstances of an individual code.
 5. Paper authorship should be as inclusive as possible, recognizing contributions of not just new features,
    but significant bug fixes, documentation improvements, and other meaningful effort. No contributions should
