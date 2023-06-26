@@ -1,0 +1,47 @@
+# Scope of emmet document models
+
+## Context and Problem Statement
+
+Regular publications are important for several reasons, including:
+* An additional method to communicate capabilities of codes with the community.
+* Career advancement for individual contributors.
+* Increased confidence in methods when a publication has been peer-reviewed.
+* An additional method to track usage of a code, specifically when that usage has lead to a scientific advance.
+* Motivate and incentivize contribution to codes from new contributors.
+
+It is expected that **publication decisions will primarily always be the responsibility of lead developers.** 
+However, it might be useful to formalize some guidelines for best practices.
+
+## Decision Drivers
+
+TBD
+
+## Considered Options
+
+### Proposed Guidelines
+
+We could propose a guideline document that includes the following main points:
+
+1. We encourage publication of software papers.
+   Publication and organization of a software paper is the responsibility of the lead developer(s) of that
+   software package. The following are guidelines only.
+2. A paper should be written or planned by the time an open-source code is used either in published scientific
+   research or used on the production Materials Project website.
+3. A distinction can be made between more focused codes (e.g., a single feature, unlikely to see extensive
+   future development) and more foundational codes (e.g., expects lots of future development or contains a
+   new scientific formalism). The former might be more appropriate for a brief paper in a journal such as JOSS.
+4. To acknowledge that the initial set of authors will inevitably be incomplete over the lifetime of the code,
+   two strategies are suggested:
+   a. A Zenodo citation that is continuously updated with all contributors.
+   b. "Update" papers, on a frequency that is best determined by the circumstances of an individual code.
+5. Paper authorship should be as inclusive as possible, recognizing contributions of not just new features,
+   but significant bug fixes, documentation improvements, and other meaningful effort. No contributions should
+   be taken for granted.
+   
+## Decision Outcome
+
+TBD
+
+## More Information
+
+TBD
