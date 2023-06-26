@@ -51,9 +51,30 @@ This option would place updated IO of ANY code into a dedicated addon package (e
 - Bad, because it requires pymatgen maintainers to have knowledge of many codes
 - Bad, because it may be difficult to maintain simultaneous `atomate1` and `atomate2` compatibility in IO classes (needs further research)
 
+### Option 4: Per discussion on GitHub in May 2023
+
+This option is a hybrid of option 1a and 3. In this option:
+
+- IO for codes that are central to MP or to the work of pymatgen maintainers (especially VASP and LAMMPS) will stay in pymatgen.
+- IO for other codes (such as Q-Chem) can either stay where they are or be moved at the maintainer's discrection.
+- Concerns about installed size of the `git` repository can be addressed using `git sparse-checkout`
+- Discussion / concerns about `atomate1` vs `atomate2` compatibility are deemed out of scope and will be addressed separately if needed.
+
+Assessment:
+- Good, because it does not require significant re-work of existing code
+- Good, because it makes it possible for individuals with expert knowledge of specific codes to maintain their own repos if desired (and potentially lessen the burden on pymatgen maintainers)
+- Neutral, because it does not directly do anything to address dependency bloat or the volume of CI tests run on every PR
+- Bad, because it may confuse users that some codes are "built in" while others require a separate addon installation (though this can be addressed via documentation updates)
+
 ## Decision Outcome
 
-TBD
+TBD 
+
+## Implementation Plan
+
+- [x] [pymatgen contributing page](https://pymatgen.org/contributing.html#direct-contributions-to-pymatgen-main-distribution) was updated to included instructions for `git sparse-checkout` (ALREADY DONE)
+- [ ] Update [pymatgen developer installation page](https://pymatgen.org/installation.html#step-2-install-pymatgen-in-developmental-mode) to add `git sparse-checkout` instructions and remove reference to `git-lfs`
+- [ ] Update the [pymatgen contributing page](https://pymatgen.org/contributing.html#writing-add-ons-for-pymatgen) with the outcome of this decision, to clarify how IO modules are handled.
 
 ## More Information
 
