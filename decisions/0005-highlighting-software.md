@@ -17,3 +17,6 @@ The aim of this decision is to decide where and how MP-adjacent software will be
 - Should have some set of criteria for inclusion/exclusion
 
 ## Considered Options
+
+- A dedicated page on the Materials Project website
+- An "awesome list"-style GitHub repo under the Materials Project github account
