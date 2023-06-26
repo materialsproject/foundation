@@ -20,3 +20,5 @@ The aim of this decision is to decide where and how MP-adjacent software will be
 
 - A dedicated page on the Materials Project website
 - An "awesome list"-style GitHub repo under the Materials Project github account
+- On the Pymatgen page
+- In the development guide in the gitbook
