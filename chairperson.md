@@ -4,4 +4,4 @@
 - Apr - Jul 2023: Patrick Huck
 - Aug - Nov 2023: Alex Ganose
 - Dec - Mar 2024: Matt Horton
-- Apr - Jul 2024: 
+- Apr - Jul 2024: Janine George 
