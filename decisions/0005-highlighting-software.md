@@ -43,6 +43,32 @@ Cons:
 
 - May be slightly harder to stumble upon
 
+### Option 3: On the Pymatgen Add-Ons Page
+
+Codes that are part of the greater MP universe could be listed on the Pymatgen add-ons page, as is done already.
+
+Pros:
+
+- We're already doing this
+
+Cons:
+
+- Not particularly visible because nobody really thinks to look there
+- Not all MP-adjacent software are based around Pymatgen in particular
+- Pymatgen is not a stand-in for MP at large
+
+### Option 4: An "Awesome List" on GitHub
+
+Codes that are part of the greater MP universe could be listed in a dedicated GitHub repo under the Materials Project organization that would be an "awesome list" style of MP-adjacent software.
+
+Pros:
+
+- Easy to update via a PR
+
+Cons:
+
+- Few will likely be aware of its existence
+
 ## Related Discussion
 
 A discussion was raised by @mkhorton about assigning credit _within_ a code, beyond simply putting a DOI in the docstring. A discussion was raised about using [duecredit](https://github.com/duecredit/duecredit), which is a lightweight decorator that can be put around functions that will automatically assemble a list of citable references for the user. It was agreed upon that this would be on an opt-in basis both for the code maintainer and the code contributor. @utf raised an equally important point about the need to ensure that the documentation reflects the citation information even when the decorator is applied.
