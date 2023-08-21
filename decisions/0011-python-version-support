@@ -1,0 +1,85 @@
+---
+# Configuration for the Jekyll template "Just the Docs"
+parent: Decisions
+nav_order: 1
+title: Template
+layout: home
+
+# These are optional elements. Feel free to remove any of them.
+# status: {proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)}
+# date: {YYYY-MM-DD when the decision was last updated}
+# deciders: {list everyone involved in the decision}
+# consulted: {list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication}
+# informed: {list everyone who is kept up-to-date on progress; and with whom there is a one-way communication}
+---
+<!-- we need to disable MD025, because we use the different heading "ADR Template" in the homepage (see above) than it is foreseen in the template -->
+<!-- markdownlint-disable-next-line MD025 -->
+# `python` version support policy
+
+## Context and Problem Statement
+
+Considering that MPSF codes are highly interconnected and likely to be installed in the same 
+environments, a policy on how long to support old versions of python is needed.
+
+<!-- This is an optional element. Feel free to remove. -->
+## Decision Drivers
+
+* If an upstream dependency that another member code requires drops support for an old version
+  of python before the downstream dependency, users could face installation problems. For example,
+  if `maggma` drops `python` 3.7 support before `emmet`, and `emmet` depends on `maggma`, then a 
+  user might try to install `emmet` in a python 3.7 environment and then encounter installation issues.
+* Without a clear policy, package maintainers might invest unecessary extra work trying to maintain support
+  for older versions.
+* A clear policy would help users and developers of complementary / dependent tools to anticipate changes
+  in version support.
+
+## Considered Options
+
+For all options below, MPSF codes should also ensure that their CI testing workflows test against every
+supported version of python.
+
+### Follow the `numpy` deprecation policy ([NEP 29](https://numpy.org/neps/nep-0029-deprecation_policy.html))
+
+<!-- This is an optional element. Feel free to remove. -->
+See the link for the full policy. Briefly, this policy means:
+- Support minor versions of python released up to 42 months prior to the aniticpated release date.
+- This would mean that anything released today should support `python 3.9+` (see [drop table](https://numpy.org/neps/nep-0029-deprecation_policy.html#drop-schedule))
+
+* Good, because it follows the recommendations of the Numpy organization, the ultimate "upstream dependency" in the
+  scientific python ecosystem
+* Good, because it guarantees that MPSF codes will be compatible with the latest maintained versions of `numpy` and `scipy`.
+* Bad, because maybe it's a bit aggressive?
+
+### Maintain support until something breaks, and then follow the numpy policy
+
+Maintain support for old versions of python until other changes (i.e., from linting or feature additions)
+start to require special changes or imports in order to maintain backward compatibilty. Then, as long
+as the broken version is outside the numpy support window, drop it.
+
+* Good, because avoids limiting the support window without good reason
+* Bad, because does not provide clarity about how long old versions will be supported
+
+### Add one version to the `numpy` policy
+
+Support one minor python version later than indicated by the numpy policy. So instead of dropping support for 
+`python` 3.8 after April 2023, we would drop support for 3.7 after that date.
+
+* Good, because less aggressive
+
+
+## Decision Outcome
+
+TBD
+
+<!-- This is an optional element. Feel free to remove. -->
+
+## Implementation Plan
+
+{List changes to be made in affected codes, as applicable, or list "N/A"}
+
+- [ ] `pymatgen`: drop support for python 3.X
+- [ ] `atomate2`: drop support for python 3.X
+- [ ] `emmet`: drop support for python 3.X
+- [ ] `crystal-toolkit`: drop support for python 3.X
+- [ ] `jobflow`: drop support for python 3.X
+- [ ] `maggma`: drop support for python 3.X
