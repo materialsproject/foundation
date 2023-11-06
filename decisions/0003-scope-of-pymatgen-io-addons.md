@@ -59,6 +59,7 @@ This option is a hybrid of option 1a and 3. In this option:
 - IO for other codes (such as Q-Chem) can either stay where they are or be moved at the maintainer's discrection.
 - Concerns about installed size of the `git` repository can be addressed using `git sparse-checkout`
 - Discussion / concerns about `atomate1` vs `atomate2` compatibility are deemed out of scope and will be addressed separately if needed.
+- We should clarify the suggested license(s) for pymatgen addons in the documentation and by adding a template license to the addon repo
 
 Assessment:
 - Good, because it does not require significant re-work of existing code
@@ -75,6 +76,7 @@ TBD
 - [x] [pymatgen contributing page](https://pymatgen.org/contributing.html#direct-contributions-to-pymatgen-main-distribution) was updated to included instructions for `git sparse-checkout` (ALREADY DONE)
 - [ ] Update [pymatgen developer installation page](https://pymatgen.org/installation.html#step-2-install-pymatgen-in-developmental-mode) to add `git sparse-checkout` instructions and remove reference to `git-lfs`
 - [ ] Update the [pymatgen contributing page](https://pymatgen.org/contributing.html#writing-add-ons-for-pymatgen) with the outcome of this decision, to clarify how IO modules are handled.
+- [ ] Update the [pymatgen-addon-template repo]([url](https://github.com/materialsproject/pymatgen-addon-template)) with a suggested pymatgen-compatible license (and clarify suggested licenses)
 
 ## More Information
 
