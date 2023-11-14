@@ -69,7 +69,7 @@ Assessment:
 
 ## Decision Outcome
 
-TBD 
+- Hybrid solution (option 4) was approved by unanimous consent (6th of December, 2023)
 
 ## Implementation Plan
 
