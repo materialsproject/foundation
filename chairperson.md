@@ -5,4 +5,5 @@
 - Aug - Nov 2023: Alex Ganose
 - Dec - Mar 2024: Matt Horton
 - Apr - Jul 2024: Janine George
-- Aug - Nov 2024: ?
+- Aug - Nov 2024: Ryan Kingsbury
+- Dec - Mar 2025: TBD
