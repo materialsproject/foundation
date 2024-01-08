@@ -54,7 +54,7 @@ Support one minor python version later than indicated by the numpy policy. So in
 
 ## Decision Outcome
 
-A hybrid of Option 1 and 2 was adopted.
+A hybrid of Option 1 and 2 was adopted by majority vote of the MPSF on January 8, 2024.
 
 - MPSF codes will commit to support the same versions of Python as numpy ([NEP 29](https://numpy.org/neps/nep-0029-deprecation_policy.html)).
 - Older versions of Python may work, but fixes are not expected. If an unsupported version of Python is tested in CI, and breaks, it will be removed from CI.
