@@ -1,0 +1,75 @@
+# `python` version support policy
+
+## Context and Problem Statement
+
+Considering that MPSF codes are highly interconnected and likely to be installed in the same 
+environments, a policy on how long to support old versions of python is needed. Part of the
+intention of this policy is to set expectation's for both 1) maintainers' responsibility
+to ensuring backward compatibility and 2) for users of the code to understand how long
+to expect support for a particular `python` version.
+
+
+## Decision Drivers
+
+* If an upstream dependency that another member code requires drops support for an old version
+  of python before the downstream dependency, users could face installation problems. For example,
+  if `maggma` drops `python` 3.7 support before `emmet`, and `emmet` depends on `maggma`, then a 
+  user might try to install `emmet` in a python 3.7 environment and then encounter installation issues.
+* Without a clear policy, package maintainers might invest unecessary extra work trying to maintain support
+  for older versions.
+* A clear policy would help users and developers of complementary / dependent tools to anticipate changes
+  in version support.
+
+## Considered Options
+
+For all options below, MPSF codes should also ensure that their CI testing workflows test against every
+supported version of python.
+
+### Follow the `numpy` deprecation policy ([NEP 29](https://numpy.org/neps/nep-0029-deprecation_policy.html))
+
+See the link for the full policy. Briefly, this policy means:
+- Support minor versions of python released up to 42 months prior to the aniticpated release date.
+- This would mean that anything released today should support `python 3.9+` (see [drop table](https://numpy.org/neps/nep-0029-deprecation_policy.html#drop-schedule))
+
+* Good, because it follows the recommendations of the Numpy organization, the ultimate "upstream dependency" in the
+  scientific python ecosystem
+* Good, because it guarantees that MPSF codes will be compatible with the latest maintained versions of `numpy` and `scipy`.
+* Bad, because maybe it's a bit aggressive?
+
+### Maintain support until something breaks, and then follow the numpy policy
+
+Maintain support for old versions of python until other changes (i.e., from linting or feature additions)
+start to require special changes or imports in order to maintain backward compatibilty. Then, as long
+as the broken version is outside the numpy support window, drop it.
+
+* Good, because avoids limiting the support window without good reason
+* Bad, because does not provide clarity about how long old versions will be supported
+
+### Add one version to the `numpy` policy
+
+Support one minor python version later than indicated by the numpy policy. So instead of dropping support for 
+`python` 3.8 after April 2023, we would drop support for 3.7 after that date.
+
+* Good, because less aggressive
+
+## Decision Outcome
+
+A hybrid of Option 1 and 2 was adopted by majority vote of the MPSF on January 8, 2024.
+
+- MPSF codes will commit to support the same versions of Python as numpy ([NEP 29](https://numpy.org/neps/nep-0029-deprecation_policy.html)).
+- Older versions of Python may work, but fixes are not expected. If an unsupported version of Python is tested in CI, and breaks, it will be removed from CI.
+- Whenever support for major Python version is dropped, there will be one final release of that code before updating the minimum Python version specified in the project metadata (setup.py/pyproject.toml) incorporating all backward-compatible, unreleased changes. The changelog must report that support for a major Python version has been dropped when it is removed and mark this as a BREAKING CHANGE.
+- At a minimum, CI testing in each code's repository will include the minimum and maximum supported python version
+
+## Implementation Plan
+
+{List changes to be made in affected codes, as applicable, or list "N/A"}
+
+- [ ] All codes: consider a statement in the README file referencing this policy
+- [ ] `pymatgen`: add python 3.12 support to CI
+- [ ] `atomate2`: add python 3.12 support to CI
+- [ ] `emmet`: add python 3.12 support to CI
+- [ ] `crystal-toolkit`: expand CI testing to encompass multiple versions
+- [ ] `jobflow`: add python 3.12 support to CI
+- [ ] `maggma`: drop support for python 3.8 when something breaks
+- [ ] `maggma`: add python 3.12 to CI
