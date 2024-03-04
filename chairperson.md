@@ -6,5 +6,4 @@
 - Dec - Mar 2024: Matt Horton
 - Apr - Jul 2024: Janine George
 - Aug - Nov 2024: Ryan Kingsbury
-- Dec - Mar 2025: Ruoxi Yang
-- Apr - Jul 2025: TBD
+- Dec - Mar 2025: TBD
