@@ -9,6 +9,7 @@ Many projects are built directly on core Materials Project codes. Changes in our
 - We would like to keep the workload minimal
 - We would like to have many users of our codes and encourage developments based on our codes.
 - Keeping track of compatible versions of software packages
+- Evaluation of a Prototype of a meta package
 
 ## Considered Options
 1. Update individual code requirements
