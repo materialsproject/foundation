@@ -70,37 +70,32 @@ For POTCAR updates:
 -   The current actinide series of POTCARs used by MP is inconsistent
     with all-electron data and must be updated.
 
--   Some issues are also noted for Ba and Xe
+-   "Optimal" POTCARs are determined by minimizing the error in
+    equation-of-state-fitted equilibrium volumes, bulk moduli, and the
+    pressure derivative of the bulk modulus. Reference values are taken
+    from all-electron data [@bosoni2024]
 
--   Recommendations for new POTCARs are given in Ref. 1,
+-   By this criteria, 58 POTCARs in total would be updated
+
+-   Alternately, updating only those 12 elements which show $\geq 3$%
+    MAPE in equilibrium volumes yields very comparable accuracy to the
+    fully optimized set. This is the "minimal update" set
+
+-   Recommendations for new POTCARs are given in Ref. [@bosoni2024],
     which results in GW-derived pseudopotentials being recommended for
-    Ba and Xe. We have also benchmarked these for higher accuracy, and
-    present them in Table [1](#tab:potcar_changes){reference-type="ref"
+    Ba and Xe, among other elements We have also benchmarked these for
+    higher accuracy, and present them in Table
+    [\[tab:potcar_changes\]](#tab:potcar_changes){reference-type="ref"
     reference="tab:potcar_changes"}
 
-::: {#tab:potcar_changes}
-    Element   MP r$^2$SCAN POTCAR   New POTCAR   New POTCAR ENMAX (eV)
-  --------- --------------------- ------------ -----------------------
-         Ba                 Ba_sv     Ba_sv_GW                  267.02
-         Dy                  Dy_3         Dy_h                 405.886
-         Er                  Er_3         Er_h                 429.583
-         Ho                  Ho_3         Ho_h                  415.91
-         Nd                  Nd_3         Nd_h                 402.016
-         Pm                  Pm_3         Pm_h                 404.406
-         Pr                  Pr_3         Pr_h                 400.742
-         Sm                  Sm_3         Sm_h                 405.382
-         Tb                  Tb_3         Tb_h                 405.043
-         Tm                  Tm_3         Tm_h                 419.812
-         Xe                    Xe        Xe_GW                 179.547
-         Yb                  Yb_3         Yb_h                 409.285
-
-  :  Summary of recommended POTCAR changes. The POTCARs used in the
-  r$^2$SCAN are listed in the second column for each element in the
-  first column (from the left). The recommended POTCARs from Ref.
-  1 are listed in the third column, and their minimum
-  required plane-wave cutoff energies are listed in the rightmost column
-  (ENMAX).
-:::
+-   From Table
+    [\[tab:potcar_changes\]](#tab:potcar_changes){reference-type="ref"
+    reference="tab:potcar_changes"}: going from MP's current POTCAR set
+    to the minimal update set reduces the volume MAPE from 2.2% to 0.7%;
+    going to the optimal set reduces this further to 0.5%. Similarly,
+    for the bulk modulus, going from MP's set to the minimal update set
+    reduces the bulk modulus MAPE from 10.7% to 4.0%, and then to 3.9%
+    for the optimal set.
 
 For Hubbard $U$ updates:
 
