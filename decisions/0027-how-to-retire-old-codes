@@ -29,7 +29,7 @@ This code might still be used in the community. One of the recent example codes 
 
 ## Considered Options
 
-### Pin to specific versions of the dependencies and then release a final version
+### Use specific versions of the dependencies (via toml or setup.py-based installations) and then release a final version (or release candidate)
 * Good as the code can still be used 
 * Bad as it might not be easy to use together with other software
 ### Transfer code ownership to a fork outside of MP (if someone wants to take over code)
