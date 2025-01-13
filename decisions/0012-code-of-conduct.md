@@ -6,7 +6,7 @@ As stated in the MPSF [bylaws](https://github.com/materialsproject/foundation/bl
 
 ## Considered Options
 
-### Reference in README and include a copy in the reposotiry
+### Reference in README and include a copy in the repository
 
 To put this into practice, MPSF codes will
 
@@ -19,15 +19,16 @@ To put this into practice, MPSF codes will
 
 ## Decision Outcome
 
-TBD
+Implementing the above steps was majority approved in Jan 2024 pending review by MP leadership, which was completed later in 2024.
 
 ## Implementation Plan
 
-{List changes to be made in affected codes, as applicable, or list "N/A"}
+All codes have already implemented some form of Code of Conduct. Each is recommended to update the document to the version included in this PR,
+and reference it in the README.
 
-- [ ] `pymatgen`: Update README, add `CODE_OF_CONDUCT.md`.
+- [ ] `pymatgen`: Update README, Update `CODE_OF_CONDUCT.md` with this version.
 - [ ] `atomate2`: Update README. Update `CODE_OF_CONDUCT.md` with this version.
 - [ ] `emmet`: Update README. Update `CODE_OF_CONDUCT.md` with this version.
-- [x] `crystal-toolkit`: Already implemented.
+- [ ] `crystal-toolkit`: Update `CODE_OF_CONDUCT.md` with this version.
 - [ ] `jobflow`: Update README. Update `CODE_OF_CONDUCT.md` with this version.
 - [ ] `maggma`: Update README. Update `CODE_OF_CONDUCT.md` with this version.
