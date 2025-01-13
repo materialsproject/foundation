@@ -40,8 +40,23 @@ We could propose a guideline document that includes the following main points:
    
 ## Decision Outcome
 
-TBD
+We recommend the following specific actions within each supported code:
 
-## More Information
+1. Include a "How to Cite" section in the README file that contains a link to relevant publications (if any) and/or a BibTex entry
+2. Ensure that the repo is connected to Zenodo so that DOIs are minted with each public release
+3. Whenever a publication is in the works, advertise it in the project README and/or via a pinned issue and invite contributions from community members.
 
-TBD
+The atomate2 repository provides a good example of implementing this policy. ([README ](https://github.com/materialsproject/atomate2?tab=readme-ov-file)and [issue](https://github.com/materialsproject/atomate2/issues/750))
+
+These actions were unanimously approved at the 01-13-25 MPSF Steering Committee meeting.
+
+## Implementation Plan
+
+All codes are requested to review their READMEs and Zenodo settings.
+
+- [ ] `pymatgen`: README already done; needs Zenodo integration.
+- [x] `atomate2`: Already implemented.
+- [ ] `emmet`: needs README and Zenodo integration.
+- [ ] `crystal-toolkit`: README already done; needs Zenodo integration.
+- [ ] `jobflow`: README already done; needs Zenodo integration.
+- [ ] `maggma`: needs README and Zenodo integration.
