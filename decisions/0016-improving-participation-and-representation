@@ -31,7 +31,7 @@ mentor is more feasible.
 
 We propose to implement a PR mentoring program in supported code repositories. Specifically this will comprise
 
-1. Flagging certain GitHub issues with a specific label indicating it is a priority for the maintainer for for MPSF
+1. Flagging certain GitHub issues with the label "Mentoring Available" indicating it is a priority for the maintainer for MPSF
 2. If a contributor wants to tackle such an issue and is making their first contribution to that particular repository, we will offer 1:1, offline mentoring on request. This option can be indicated in the Issue description.
 3. The mentoring can be carried out asynchronously via email or live via Zoom office hours, by maintainers, PIs, or grad students / postdocs with appropriate skills.
 
