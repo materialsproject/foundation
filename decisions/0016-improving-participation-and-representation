@@ -1,0 +1,38 @@
+# Improving Participation and Representation
+
+## Context and Problem Statement
+
+The Materials Project open-source ecosystem should be a welcoming, inclusive 
+environment for new contributors. This requires an active effort, including 
+decisions on concrete actions that can be taken to improve participation and 
+representation.
+
+## Decision drivers
+
+1. Merging one's first PR is often intimidating to newcomers, and thus becomes an obstacle to growing the developer base, particularly among less-represented groups.
+2. MP Staff and external PI's have limited bandwidth for ongoing maintenance and need to expand the development community to share the load.
+For first time contributors, working on issues flagged a certain way, we'll provide 1:1 mentoring to get the PR merged
+Eventually will provide networking and prof dev opportunity for postdocs / grad students
+
+## Considered Options
+
+1. Formal or informal surveys to talk to people who may want to contribute and have not. This could be done at a large materials science conference, and could include co-ordination with the conference organizers for a more holistic discussion on open-source participation.
+2. Encourage community leaders to attend courses provided by the Center for Scientific Collaboration and Community Engagement.
+3. The GitHub Actions for statistics on issues, pull requests and discussions could be installed in all repos. Time to first response is a commonly-quoted metric for determining if a contributor is likely to continuing staying involved.
+4. Provide additional training and documentation for new contributors.
+4a. Specifically - provide focused mentoring for first time contributors who are working on their first PR, in the form of 1:1 consultations or office hours.
+
+Options 4 and 4a are appealing, but we must recognize that most MP Staff or external PIs lack the time to do this. To mitigate the concern, if first time developers
+are willing to work on _pre-existing issues identified by maintainers that they themselves simply don't have time to work on_, then offering our time to
+mentor is more feasible.
+
+
+## Decision Outcome
+
+We propose to implement a PR mentoring program in supported code repositories. Specifically this will comprise
+
+1. Flagging certain GitHub issues with the label "Mentoring Available" indicating it is a priority for the maintainer for MPSF
+2. If a contributor wants to tackle such an issue and is making their first contribution to that particular repository, we will offer 1:1, offline mentoring on request. This option can be indicated in the Issue description.
+3. The mentoring can be carried out asynchronously via email or live via Zoom office hours, by maintainers, PIs, or grad students / postdocs with appropriate skills.
+
+The PR Mentoring program will thus provide networking and skill building for new contributors, networking and mentoring pracice for grad students/postdocs, and help expand the developer community.
