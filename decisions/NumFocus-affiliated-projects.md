@@ -34,11 +34,13 @@ We tentatively assume all MP codes are included unless maintainers of specific l
 
 ## Decision Outcome
 
+- Following @yang-ruoxi  discussions with NumFocus, it's clear we should apply as MPSF rather than as individual packages
+- @yang-ruoxi and @rkingsbury drafted an application to be submitted for the April 15th deadline
+- At the March 2025 MPSF meeting, the members present decided to proceed to apply.
 
 
 ## Implementation Plan
-- @yang-ruoxi will inquire NumFocus about their guidelines
-- Once hear back, a subcomittee of interested parties can draft an application before Jan 15 2025
+- @yang-ruoxi will coordinate finalizing and submitting the NumFocus application
 
 
 ## More Information
